@@ -1,0 +1,16 @@
+__default__:
+  partition: quick
+  time: 4:00
+  jobname: "Snake.{rule}.{wildcards}"
+  extra: "--gres=lscratch:10"
+  output: "{rule}.{wildcards}.stdout"
+  error: "{rule}.{wildcards}.stderr"
+
+
+filter_taxonomy:
+  partition: norm
+  time: 24:00
+  jobname: "Snake.{rule}.{wildcards}"
+  extra: "--gres=lscratch:10"
+  output: "{rule}.{wildcards}.stdout"
+  error: "{rule}.{wildcards}.stderr"
